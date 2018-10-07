@@ -1,0 +1,365 @@
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    font-family:'Open Sans', "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Top */
+.topheader{
+    background-color:rgb(39,44,49);
+    padding:10px;
+}
+.topheader input[type=text] {
+    padding: 6px;
+    height:35px;
+}
+.login, .login a, .cart a{
+    color:white;
+    margin-top: 5px;
+}
+.cart {
+  margin-top: 5px;
+}
+#cart{
+  width:25px;
+}
+
+
+/* Logo */
+#logo {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+
+/* Navbar */
+nav {
+  box-shadow:1px 1px 3px #212529;
+}
+nav li a{
+  font-weight: bold;
+}
+
+
+/* Footer */
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/pet.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+footer.footer, .footer a{
+  color:white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+/* Index Page */
+header .masthead-index {
+  position: relative;
+  background-color: #343a40;
+  background:url("../img/top.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+header .masthead-index .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+.shop {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.shop-item a {
+  color:black;
+}
+.shop .shop-item {
+  max-width: 20rem;
+  font-size: 4.5rem;
+}
+.shop-item a:hover{ 
+  font-size: 5rem;
+  text-decoration: none;
+}
+.shop-item p {
+  font-size: 1rem;
+}
+
+
+/* Product Browsing Page */
+header .masthead-products {
+  position: relative;
+  background-color: #343a40;
+  background:url("../img/shopdog.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+header .masthead-products .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+.contentArea{
+  width: 100vw;
+  background-color: rgba(255,255,255,0.8);
+  min-height: 2em;
+  display: inline-block;
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+.itemBlock{
+  width: 26%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  padding-top: 1em;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.productImage{
+  width: calc(100% - 1em);
+  height: calc(80% - 1em);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  border: 2px solid rgb(240,240,240);
+  border-radius: 4px;
+  image-orientation: from-image;
+}
+.productImage:hover {
+   border: 3px solid rgb(80,80,80);
+}
+.productTitle{
+  font-size: 13pt;
+  margin-top: 5px;
+  color:navy;
+  font-weight:800;
+}
+.productDesc{
+  font-size: 12pt;
+  text-align: center;
+  margin-top: 5px;
+  color: rgb(100,100,100);
+  font-family: "Palatino Linotype";
+}
+.productPrice{
+  font-family: 'Fredoka One', cursive;
+  font-size: 15pt;
+}
+
+
+/* Product Detail Page */
+main {
+  margin: 0px auto 0px auto;
+  display: flex;
+  margin
+}
+
+
+/* Columns */
+.left-column {
+  width: 60%;
+  position: relative;
+}
+.left-column img {
+  padding-top:15px;
+}
+.right-column {
+  width: 40%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.left-column img.active {
+  opacity: 1;
+}
+
+
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+
+/* Product Color */
+.product-color {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.color-choose div {
+  display: inline-block;
+}
+.color-choose input[type=&quot;radio&quot;]{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    margin: 0px 4px 0 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cblue{
+  background-color: blue;
+}
+.cblack{
+  background-color: black;
+}
+.cred{
+  background-color: red;
+}
+.checkmark:hover{
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+}
+
+
+/*Size Choice */
+#size-choose {
+  margin-top: 5px;
+}
+#size-choose > button {
+  border: 2px solid #E1E8EE;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #5E6977;
+  background-color: #fff;
+}
+
+#size-choose > button:hover,
+#size-choose > button:active,
+#size-choose > button:focus{
+  border: 2px solid #86939E;
+  outline: none;
+  background-color: lightgrey;
+}
+ 
+.size-config a {
+  color: #358ED7;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+
+/*Quantity Choice */
+.quantity{
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 30px;
+}
+
+#myform {
+    text-align: left;
+    padding: 10px 0px 15px 0px;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
+
+
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+
+
+/* Add to cart*/
+.cart-btn {
+  display: inline-block;
+  background-color: #7DC855;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+}
+.cart-btn:hover {
+  background-color: #64af3d;
+}
